@@ -1201,6 +1201,63 @@ footer {
   .product-grid { gap: 16px 8px; }
   .product-card h3 { line-height: 1.35; }
 }
+
+@media (min-width: 651px) and (max-width: 800px) {
+  .hero {
+    height: 490px;
+  }
+  .hero-copy {
+    left: 4%;
+    top: 24%;
+    width: 32%;
+  }
+  .hero h1 {
+    font-size: clamp(30px, 4.5vw, 35px);
+    line-height: .9;
+  }
+  .hero-copy > p:not(.eyebrow) {
+    font-size: 11px;
+    line-height: 1.45;
+  }
+  .hero-buttons {
+    gap: 7px;
+    flex-wrap: wrap;
+  }
+  .hero-buttons .button {
+    padding: 10px 13px;
+    font-size: 9px;
+  }
+  .hero-product {
+    left: 36%;
+    top: 9%;
+    width: 28%;
+    height: 70%;
+  }
+  .hero-product img {
+    width: 90%;
+    border-radius: 15px;
+  }
+  .hero-detail {
+    right: 3%;
+    top: 14%;
+    width: 195px;
+    gap: 8px;
+  }
+  .hero-detail > strong {
+    font-size: 42px;
+  }
+  .sizes { gap: 6px; }
+  .sizes button { width: 38px; height: 38px; }
+  .add-size { padding: 10px 15px; font-size: 9px; }
+  .hero-controls {
+    left: 41%;
+    bottom: 14px;
+    gap: 10px;
+  }
+  .hero-controls button { width: 38px; height: 38px; }
+  .hero-controls strong { font-size: 21px; }
+  .next-product { display: none; }
+}
 @media (prefers-reduced-motion: reduce) {
   *,
   *:before,
