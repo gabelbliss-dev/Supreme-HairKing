@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#111111" />
+    <title>My Account — Supreme HairKing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="account.css" />
+  </head>
+  <body class="account-page">
+    <header class="account-header">
+      <a class="brand" href="index.html" aria-label="Supreme HairKing home"><img class="header-logo" src="images/logo.png" alt="Supreme HairKing" /></a>
+      <a class="back-link" href="index.html">← BACK TO SHOP</a>
+    </header>
+    <main class="account-layout">
+      <section class="account-visual" aria-label="Supreme HairKing"><div class="visual-copy"><span>SUPREME HAIRKING</span><h1>YOUR LOOK.<br />YOUR MOMENT.</h1><p>Good hair days start here.</p></div></section>
+      <section class="account-card" aria-labelledby="form-title">
+        <a class="mobile-back" href="index.html">← Back to shop</a>
+        <p class="account-kicker">WELCOME TO THE SUPREME HAIRKING COMMUNITY</p>
+        <h2 id="form-title">Welcome back</h2>
+        <p class="account-intro" id="form-intro">Sign in to view your orders and save your favourites.</p>
+        <div class="account-tabs" role="tablist" aria-label="Account options">
+          <button type="button" class="account-tab active" id="login-tab" role="tab" aria-selected="true">Log in</button>
+          <button type="button" class="account-tab" id="signup-tab" role="tab" aria-selected="false">Create account</button>
+        </div>
+        <form id="account-form">
+          <label class="signup-only" for="full-name" hidden>Full name</label>
+          <input class="signup-only" id="full-name" name="name" type="text" autocomplete="name" placeholder="Your full name" hidden />
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+          <label for="password">Password</label>
+          <div class="password-field"><input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" minlength="8" required /><button type="button" id="toggle-password" aria-label="Show password">Show</button></div>
+          <div class="form-options login-only"><label class="remember"><input type="checkbox" name="remember" /> Remember me</label><a href="#forgot" id="forgot-link">Forgot password?</a></div>
+          <label class="terms signup-only" hidden><input type="checkbox" id="terms" /> I agree to the <a href="#terms">Terms</a> and <a href="#privacy">Privacy Policy</a></label>
+          <button class="account-submit" type="submit" id="submit-label">LOG IN</button>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        </form>
+        <p class="account-footnote">Secure account access for a more personal shopping experience.</p>
+      </section>
+    </main>
+    <script src="account.js"></script>
+  </body>
+</html>

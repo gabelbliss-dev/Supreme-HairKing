@@ -1,0 +1,37 @@
+.account-page { min-height: 100vh; background: #f7f6f3; }
+.account-header { height: 76px; padding: 0 5%; display: flex; align-items: center; justify-content: space-between; background: #111; color: white; }
+.account-header .brand { width: auto; }
+.header-logo { display: block; width: 56px; height: 56px; object-fit: contain; }
+.back-link, .mobile-back { font-size: 10px; font-weight: 800; letter-spacing: .1em; }
+.account-layout { min-height: calc(100vh - 76px); display: grid; grid-template-columns: minmax(0, 1fr) minmax(430px, .85fr); max-width: 1440px; margin: auto; padding: 34px 5%; gap: 5%; align-items: stretch; }
+.account-visual { min-height: 630px; border-radius: 22px; overflow: hidden; position: relative; display: flex; align-items: flex-end; padding: 8%; color: white; background: linear-gradient(0deg, #111d 0%, #1112 70%), url("images/Elegant Beauty Brand Model Cutout.png") center 34% / cover, #41482d; }
+.visual-copy { position: relative; z-index: 1; }
+.visual-copy span, .account-kicker { font-size: 10px; font-weight: 800; letter-spacing: .16em; }
+.visual-copy h1 { font: 900 clamp(48px, 7vw, 82px)/.83 var(--display); margin: 13px 0; }
+.visual-copy p { font-size: 14px; }
+.account-card { width: min(100%, 470px); justify-self: center; align-self: center; padding: 38px 0; }
+.account-kicker { color: var(--pink); margin: 0 0 10px; }
+.account-card h2 { font: 800 42px/1 var(--display); margin: 0; }
+.account-intro { color: #6e6e6e; font-size: 13px; margin: 11px 0 25px; line-height: 1.6; }
+.account-tabs { border-bottom: 1px solid #dededb; display: grid; grid-template-columns: 1fr 1fr; margin-bottom: 24px; }
+.account-tab { border: 0; background: none; color: #777; padding: 13px 8px; font-size: 12px; font-weight: 700; cursor: pointer; border-bottom: 2px solid transparent; }
+.account-tab.active { color: #111; border-color: var(--pink); }
+#account-form { display: flex; flex-direction: column; gap: 9px; }
+#account-form > label:not(.terms) { font-size: 11px; font-weight: 700; margin-top: 7px; }
+#account-form input:not([type=checkbox]) { width: 100%; height: 48px; border: 1px solid #dededb; background: white; padding: 0 14px; border-radius: 7px; outline: none; font-size: 12px; }
+#account-form input:focus { border-color: #41482d; box-shadow: 0 0 0 3px #41482d18; }
+.password-field { position: relative; }
+.password-field input { padding-right: 60px !important; }
+#toggle-password { position: absolute; right: 12px; top: 0; bottom: 0; margin: auto; height: 30px; border: 0; background: none; color: #555; font-size: 11px; font-weight: 700; cursor: pointer; }
+.form-options { display: flex; justify-content: space-between; align-items: center; margin: 6px 0 13px; font-size: 10px; }
+.remember, .terms { display: flex; align-items: center; gap: 7px; color: #666; font-size: 10px; }
+.remember input, .terms input { accent-color: var(--pink); }
+.form-options a, .terms a { color: #111; font-weight: 700; text-decoration: underline; }
+.terms { margin: 8px 0 12px; flex-wrap: wrap; }
+.account-submit { height: 49px; border: 0; border-radius: 30px; background: #111; color: white; font-size: 11px; letter-spacing: .12em; font-weight: 800; cursor: pointer; margin-top: 6px; }
+.account-submit:hover { background: #41482d; }
+.form-message { min-height: 17px; margin: 3px 0 0; color: #41482d; font-size: 11px; line-height: 1.5; }
+.account-footnote { border-top: 1px solid #e4e3df; padding-top: 17px; margin-top: 17px; color: #858585; text-align: center; font-size: 10px; }
+.mobile-back { display: none; }
+@media (max-width: 800px) { .account-layout { grid-template-columns: 1fr; max-width: 540px; padding: 22px 24px 40px; gap: 0; } .account-visual { display: none; } .account-card { padding: 10px 0; } .mobile-back { display: inline-block; margin-bottom: 32px; } .back-link { display: none; } }
+@media (max-width: 480px) { .account-header { height: 64px; padding: 0 20px; } .account-layout { min-height: calc(100vh - 64px); padding: 18px 22px 30px; } .account-card h2 { font-size: 38px; } .header-logo { width: 48px; height: 48px; } }

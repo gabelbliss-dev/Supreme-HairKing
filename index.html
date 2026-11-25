@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#111111" />
+    <title>Supreme HairKing — Wear Confidence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="utility">
+      <!-- <span>PAY WITH MOBILE MONEY</span> -->
+      <div><a href="#track">TRACK ORDER</a><a href="#help">HELP</a></div>
+    </div>
+    <header class="site-header">
+      <div class="main-header">
+        <button
+          class="menu-toggle"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <a class="brand" href="#home" aria-label="Supreme HairKing home">
+          <img class="header-logo" src="images/logo.png" alt="Supreme HairKing" /></a
+        >
+        <label class="search"
+          ><span>⌕</span
+          ><input
+            id="search"
+            type="search"
+            placeholder="Search hair, bundles, closures..."
+        /></label>
+        <div class="header-actions">
+          <a href="account.html" aria-label="Account">♙</a
+          ><a href="#wishlist" aria-label="Wishlist">♡</a
+          ><button class="cart-icon" aria-label="Open cart">
+            ♧<i id="cart-count">0</i>
+          </button>
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="selected" href="#home">HOME</a><a href="#best-sellers">SHOP</a
+        ><a href="#categories">CATEGORIES⌄</a><a href="#audience">GALLERY</a
+        ><a href="#contact">CONTACT</a
+        ><a class="account-nav" href="account.html"
+          >LOG IN / SIGN UP</a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">FEATURED <span></span> 04 / 05</p>
+          <h1>BEAUTY, YOUR WAY.<br />DEFINE YOUR LOOK.</h1>
+          <p>
+            Premium human hair and extensions selected for<br class="desktop" />
+            confidence, quality and everyday beauty.
+          </p>
+          <div class="hero-buttons">
+            <a class="button button-light" href="#best-sellers"
+              >SHOP HAIR <b>›</b></a
+            ><a class="button button-outline" href="#best-sellers">SHOP ALL</a>
+          </div>
+        </div>
+        <div class="hero-product">
+          <img
+            src="images/Bone Straight.jpg"
+            alt="Bone straight human hair bundles"
+          /><span class="product-shadow"></span>
+        </div>
+        <div class="hero-detail">
+          <small>HUMAN HAIR · STRAIGHT</small>
+          <h2>Bone Straight Bundles</h2>
+          <strong>$100</strong><b class="choose-label">CHOOSE YOUR LENGTH</b>
+          <div class="sizes">
+            <button>18</button><button class="active">20</button
+            ><button>22</button><button>24</button>
+          </div>
+          <button class="add-size" data-name="Bone Straight Bundles">
+            ♧ &nbsp; ADD TO BAG <span>20</span>
+          </button>
+        </div>
+        <div class="hero-dots">
+          <i></i><i></i><i></i><i class="active"></i><i></i>
+        </div>
+        <div class="hero-controls">
+          <button aria-label="Previous feature">‹</button
+          ><strong>BEAUTY, YOUR WAY.<br />FEEL CONFIDENT.</strong
+          ><button aria-label="Next feature">›</button>
+        </div>
+        <a class="next-product" href="#new-in"
+          ><img src="images/bounce.jpg" alt="" /><span
+            ><small>NEXT</small><b>Bounce Wave Bundles</b></span
+          ></a
+        >
+      </section>
+
+      <section class="section best" id="best-sellers">
+        <div class="section-heading">
+          <div>
+            <h2>BEST SELLERS</h2>
+            <p>The pieces everyone keeps coming back for.</p>
+          </div>
+          <a class="underlined" href="#new-in">EXPLORE MORE</a>
+        </div>
+        <div class="product-grid" id="best-grid"></div>
+      </section>
+
+      <section class="section audience-section" id="audience">
+        <div class="section-heading">
+          <div>
+            <h2>SHOP BY AUDIENCE</h2>
+            <p>Find your fit, whoever you are shopping for.</p>
+          </div>
+          <a class="underlined" href="#categories">VIEW ALL</a>
+        </div>
+        <div class="audience-grid">
+          <a class="audience-card women" href="#best-sellers"
+            ><div>
+              <h3>WOMEN</h3>
+              <p>Easy, confident, everyday</p>
+              <b>SHOP NOW ↗</b>
+            </div></a
+          >
+          <a class="audience-card unisex" href="#best-sellers"
+            ><div>
+              <h3>UNISEX</h3>
+              <p>Matching fits, made to share</p>
+              <b>SHOP NOW ↗</b>
+            </div></a
+          >
+          <a class="audience-card men" href="#best-sellers"
+            ><div>
+              <h3>MEN</h3>
+              <p>Sharp everyday fits</p>
+              <b>SHOP NOW ↗</b>
+            </div></a
+          >
+        </div>
+      </section>
+
+      <section class="section new-section" id="new-in">
+        <div class="section-heading">
+          <div>
+            <h2>NEW IN</h2>
+            <p>The latest drops, fresh off the rail.</p>
+          </div>
+          <div class="heading-actions">
+            <button aria-label="Previous products">‹</button
+            ><button aria-label="Next products">›</button
+            ><a class="underlined" href="#best-sellers">VIEW ALL</a>
+          </div>
+        </div>
+        <div class="product-grid new-grid" id="new-grid"></div>
+      </section>
+
+      <section class="section category-section" id="categories">
+        <div class="section-heading">
+          <div><h2>SHOP BY CATEGORY</h2></div>
+          <a class="underlined" href="#best-sellers">VIEW ALL</a>
+        </div>
+        <div class="category-grid">
+          <a class="category-card tees" href="#best-sellers"
+            ><span>7 STYLES</span>
+            <h3>TEES</h3></a
+          ><a class="category-card sweatshirts" href="#best-sellers"
+            ><span>2 STYLES</span>
+            <h3>SWEATSHIRTS</h3></a
+          ><a class="category-card shirts" href="#best-sellers"
+            ><span>7 STYLES</span>
+            <h3>SHIRTS</h3></a
+          ><a class="category-card jackets" href="#best-sellers"
+            ><span>2 STYLES</span>
+            <h3>JACKETS</h3></a
+          ><a class="category-card knitwear" href="#best-sellers"
+            ><span>1 STYLE</span>
+            <h3>KNITWEAR</h3></a
+          >
+        </div>
+      </section>
+
+      <section class="section style-edits" id="style-edits">
+        <div class="section-heading">
+          <div>
+            <h2>STYLE EDITS</h2>
+            <p>Outfit ideas and seasonal inspiration.</p>
+          </div>
+        </div>
+        <div class="edit-grid">
+          <a class="edit-card edit-weekend" href="#best-sellers"
+            ><div>
+              <small>THE EDIT</small>
+              <h3>THE WEEKEND EDIT</h3>
+              <p>Hot pink oversized shirt, white tee, light denim</p>
+              <b>SHOP THE LOOK</b>
+            </div></a
+          >
+          <a class="edit-card edit-street" href="#best-sellers"
+            ><div>
+              <small>THE EDIT</small>
+              <h3>STREETWEAR STORIES</h3>
+              <p>Black corduroy half-zip for golden-hour streets</p>
+              <b>SHOP THE LOOK</b>
+            </div></a
+          >
+          <a class="edit-card edit-essentials" href="#best-sellers"
+            ><div>
+              <small>THE EDIT</small>
+              <h3>EVERYDAY ESSENTIALS</h3>
+              <p>Five colours, one perfect fit</p>
+              <b>SHOP THE LOOK</b>
+            </div></a
+          >
+        </div>
+      </section>
+
+      <section class="quality-social" id="about">
+        <div class="quality-panel">
+          <div class="quality-intro">
+            <small>WHY SUPREME HAIRKING</small>
+            <h2>MADE<br />TO LAST</h2>
+            <p>Small details that make a big difference.</p>
+          </div>
+          <div class="quality-feature">
+            <span>▤</span>
+            <h3>Heavyweight cotton</h3>
+            <p>
+              240–400 gsm fabrics that feel substantial and keep their shape.
+            </p>
+          </div>
+          <div class="quality-feature">
+            <span>⬡</span>
+            <h3>Pre-shrunk</h3>
+            <p>Washed before cutting, so your size stays your size.</p>
+          </div>
+          <div class="quality-feature">
+            <span>◒</span>
+            <h3>Built for the heat</h3>
+            <p>
+              Breathable weaves chosen for Accra afternoons and AC evenings.
+            </p>
+          </div>
+          <div class="quality-feature">
+            <span>▣</span>
+            <h3>Real sizing</h3>
+            <p>Every product shows exact measurements, plus a size finder.</p>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="https://www.instagram.com/thehmtrends/"
+            ><span class="social-avatar instagram">📸</span><b>Instagram</b
+            ><small>Supreme HairKing</small></a
+          ><a href="https://www.tiktok.com/@thehmtrends"
+            ><span class="social-avatar tiktok">♪</span><b>TikTok</b
+            ><small>Supreme HairKing</small></a
+          ><a href="https://www.snapchat.com/add/hm.trends"
+            ><span class="social-avatar snapchat">👻</span><b>Snapchat</b
+            ><small>Supreme HairKing</small></a
+          ><a href="https://wa.me/233201679339"
+            ><span class="social-avatar whatsapp">◉</span><b>WhatsApp</b
+            ><small>020 167 9339</small></a
+          >
+        </div>
+      </section>
+
+      <section class="community" id="community">
+        <div class="community-photos">
+          <img
+            class="community-photo p1"
+            src="images/lady hair.png"
+            alt="Supreme HairKing community look"
+          /><img
+            class="community-photo p2"
+            src="images/11.jpeg"
+            alt="Supreme HairKing community look"
+          /><img
+            class="community-photo p3"
+            src="images/Elegant Beauty Brand Model Cutout.png"
+            alt="Supreme HairKing community look"
+          /><img
+            class="community-photo p4"
+            src="images/Bone Straight.jpg"
+            alt="Supreme HairKing community look"
+          /><img
+            class="community-photo p5"
+            src="images/bounce.jpg"
+            alt="Supreme HairKing community look"
+          /><img
+            class="community-photo p6"
+            src="images/pixie curl.jpg"
+            alt="Supreme HairKing community look"
+          /><img
+            class="community-photo p7"
+            src="images/Brown Bone Straight Hair.jpg"
+            alt="Supreme HairKing community look"
+          /><img
+            class="community-photo p8"
+            src="images/Bundle up in color, babe!_BNB’s colored bundles….jpg"
+            alt="Supreme HairKing community look"
+          /><img
+            class="community-photo p9"
+            src="images/Loose Deep Wave Human Hair Bundles and Closure Loose Wave Bundles With Lace Closure Big.jpg"
+            alt="Supreme HairKing community look"
+          /><img
+            class="community-photo p10"
+            src="images/Bone Straight.jpg"
+            alt="Supreme HairKing community look"
+          />
+          <div class="community-title">
+            <strong>#SUPREMEHAIRKING</strong><b>ON YOU</b>
+          </div>
+        </div>
+        <p>
+          Wear it, post it, tag
+          <a href="https://www.instagram.com/thehmtrends/">Supreme HairKing</a> or
+          <b>#SUPREMEHAIRKING</b> on any social to be featured.
+        </p>
+      </section>
+    </main>
+    <footer class="site-footer" id="contact">
+      <section class="newsletter">
+        <div>
+          <small>JOIN THE SUPREME HAIRKING LIST</small>
+          <h2>GET 10% OFF YOUR FIRST ORDER</h2>
+          <p>
+            New drops, restocks and members-only offers. No spam, unsubscribe
+            anytime.
+          </p>
+        </div>
+        <form class="newsletter-form">
+          <label for="newsletter-email">Email address</label>
+          <div>
+            <input
+              id="newsletter-email"
+              type="email"
+              placeholder="you@example.com"
+              required
+            /><button type="submit">SUBSCRIBE</button>
+          </div>
+        </form>
+        <button class="footer-close" aria-label="Close">×</button>
+      </section>
+      <div class="footer-main">
+        <div class="footer-about">
+          <a class="brand footer-brand" href="#home"
+            ><img src="images/logo.png" alt="Supreme HairKing" /></a
+          ><b>Dress better. Feel better.</b>
+          <p>
+            Premium human hair and extensions, selected for confidence and
+            everyday beauty.
+          </p>
+          <div class="footer-social">
+            <a
+              href="https://www.instagram.com/thehmtrends/"
+              aria-label="Instagram"
+              >◎</a
+            ><a href="https://www.tiktok.com/@thehmtrends" aria-label="TikTok"
+              >♪</a
+            ><a
+              href="https://www.snapchat.com/add/hm.trends"
+              aria-label="Snapchat"
+              >♟</a
+            ><a href="https://wa.me/+234 810 425 1284" aria-label="WhatsApp">◉</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>SHOP</h3>
+          <a href="#new-in">New in</a><a href="#best-sellers">Best sellers</a
+          ><a href="#categories">Straight hair</a
+          ><a href="#categories">Wavy hair</a
+          ><a href="#categories">Curly hair</a
+          ><a href="#categories">Closures</a>
+        </div>
+        <div class="footer-column">
+          <h3>HELP</h3>
+          <a href="#track">Track your order</a><a href="#help">Delivery info</a
+          ><a href="#help">Returns &amp; exchanges</a
+          ><a href="#help">Length guide</a><a href="#help">FAQs</a>
+        </div>
+        <div class="footer-column">
+          <h3>ABOUT</h3>
+          <a href="#about">Our story</a><a href="#contact">Contact us</a
+          ><a href="#privacy">Privacy policy</a
+          ><a href="#terms">Terms &amp; conditions</a
+          ><a href="#help">Delivery &amp; returns</a>
+        </div>
+        <div class="footer-column footer-contact">
+          <h3>GET IN TOUCH</h3>
+          <a href="mailto:hello@hmtrends.com">Email Supreme HairKing</a
+          ><a href="https://wa.me/+234 810 425 1284"
+            >◉ &nbsp; WhatsApp · +234 810 425 1284</a
+          ><span>Lagos, Nigeria</span><span>Mon–Sat, 9am–8pm</span>
+          <h3 class="accept-title">WE ACCEPT</h3>
+          <div class="payment-badges"><b>MoMo</b><b>VISA</b><b>at</b></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 SUPREME HAIRKING. All rights reserved.</span>
+        <nav>
+          <a href="#privacy">Privacy</a><a href="#terms">Terms</a
+          ><a href="#help">Returns</a><a href="#help">Help</a>
+        </nav>
+      </div>
+    </footer>
+    <aside class="cart-panel" aria-hidden="true">
+      <div class="cart-heading">
+        <h2>Your Bag</h2>
+        <button class="close-cart" aria-label="Close cart">×</button>
+      </div>
+      <div id="cart-items"></div>
+      <div class="cart-total">
+        <span>Total</span><b id="cart-total">$0</b>
+      </div>
+      <button class="button button-dark checkout">CHECKOUT</button>
+    </aside>
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/+234 810 425 1284"
+      aria-label="Chat on WhatsApp"
+      >◉</a
+    >
+    <div class="toast" role="status"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
