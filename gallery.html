@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#111111" />
+    <title>Hair Gallery — Supreme HairKing</title>
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="gallery.css" />
+  </head>
+  <body class="gallery-page">
+    <header class="gallery-header">
+      <a class="gallery-brand" href="index.html" aria-label="Supreme HairKing home"><img src="images/logo.png" alt="Supreme HairKing" /></a>
+      <nav aria-label="Main navigation"><a href="index.html">HOME</a><a href="index.html#best-sellers">SHOP</a><a href="index.html#categories">CATEGORIES</a><a class="current" href="gallery.html">GALLERY</a><a href="index.html#contact">CONTACT</a></nav>
+      <a class="gallery-order" href="https://wa.me/2348104251284">◉ &nbsp; ORDER ON WHATSAPP</a>
+    </header>
+    <main class="gallery-main">
+      <div class="gallery-crumb"><a href="index.html">HOME</a><span>/</span>GALLERY</div>
+      <section class="gallery-intro">
+        <p class="gallery-kicker">THE LOOKBOOK</p>
+        <h1>THE HAIR GALLERY</h1>
+        <div class="gallery-summary"><p>Explore our hair textures, lengths and colours. Tap any photo to see it full size.</p><span><b id="photo-count">0</b> photos</span></div>
+      </section>
+      <section class="gallery-filters" aria-label="Filter gallery">
+        <div class="filter-row" id="texture-filters"><button class="filter-chip active" data-filter="texture" data-value="all">All textures</button><button class="filter-chip" data-filter="texture" data-value="straight">Straight</button><button class="filter-chip" data-filter="texture" data-value="wavy">Wavy</button><button class="filter-chip" data-filter="texture" data-value="curly">Curly</button><button class="filter-chip" data-filter="texture" data-value="bundles">Bundles &amp; closures</button></div>
+        <div class="filter-row" id="color-filters"><button class="filter-chip active" data-filter="color" data-value="all">All colours</button><button class="filter-chip" data-filter="color" data-value="black"><i style="--swatch:#171717"></i>Natural black</button><button class="filter-chip" data-filter="color" data-value="brown"><i style="--swatch:#754a32"></i>Brown</button><button class="filter-chip" data-filter="color" data-value="blonde"><i style="--swatch:#c99b52"></i>Blonde</button></div>
+      </section>
+      <section class="gallery-featured">
+        <div class="gallery-section-heading"><div><p class="gallery-kicker">STYLED LOOKS</p><h2>HAIR IN THE SPOTLIGHT</h2></div><span>SUPREME HAIRKING EDIT</span></div>
+        <div class="look-grid">
+          <button class="look-card" data-image="images/lady hair.png" data-title="Everyday elegance"><img src="images/lady hair.png" alt="Long, flowing hair styled for an elegant look" /><span class="look-shade"></span><span class="look-copy"><small>THE SIGNATURE LOOK</small><b>EVERYDAY ELEGANCE</b><em>Explore the collection ↗</em></span><img class="card-brand" src="images/logo.png" alt="Supreme HairKing" /></button>
+          <button class="look-card" data-image="images/Elegant Beauty Brand Model Cutout.png" data-title="A look made yours"><img src="images/Elegant Beauty Brand Model Cutout.png" alt="Beauty look featuring long, glossy hair" /><span class="look-shade"></span><span class="look-copy"><small>SOFT GLAM</small><b>A LOOK MADE YOURS</b><em>Find your texture ↗</em></span><img class="card-brand" src="images/logo.png" alt="Supreme HairKing" /></button>
+          <button class="look-card" data-image="images/Brown Bone Straight Hair.jpg" data-title="Sleek in every shade"><img src="images/Brown Bone Straight Hair.jpg" alt="Smooth brown bone straight hair" /><span class="look-shade"></span><span class="look-copy"><small>COLOUR STORY</small><b>SLEEK IN EVERY SHADE</b><em>Shop straight hair ↗</em></span><img class="card-brand" src="images/logo.png" alt="Supreme HairKing" /></button>
+        </div>
+      </section>
+      <section class="gallery-all">
+        <div class="gallery-section-heading"><div><p class="gallery-kicker">TEXTURES, LENGTHS &amp; COLOURS</p><h2>EVERY LOOK</h2></div></div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </section>
+    </main>
+    <footer class="site-footer" id="contact">
+      <section class="newsletter">
+        <div><small>JOIN THE SUPREME HAIRKING LIST</small><h2>GET 10% OFF YOUR FIRST ORDER</h2><p>New drops, restocks and members-only offers. No spam, unsubscribe anytime.</p></div>
+        <form class="newsletter-form"><label for="newsletter-email">Email address</label><div><input id="newsletter-email" type="email" placeholder="you@example.com" required /><button type="submit">SUBSCRIBE</button></div></form>
+        <button class="footer-close" aria-label="Close">×</button>
+      </section>
+      <div class="footer-main">
+        <div class="footer-about">
+          <a class="brand footer-brand" href="index.html"><img src="images/logo.png" alt="Supreme HairKing" /></a><b>Wear confidence. Feel beautiful.</b>
+          <p>Premium human hair and extensions, selected for confidence and everyday beauty.</p>
+          <div class="footer-social"></div>
+        </div>
+        <div class="footer-column"><h3>SHOP</h3><a href="index.html#new-in">New in</a><a href="index.html#best-sellers">Best sellers</a><a href="index.html#categories">Straight hair</a><a href="index.html#categories">Wavy hair</a><a href="index.html#categories">Curly hair</a><a href="index.html#categories">Closures</a></div>
+        <div class="footer-column"><h3>HELP</h3><a href="index.html#track">Track your order</a><a href="index.html#help">Delivery info</a><a href="index.html#help">Returns &amp; exchanges</a><a href="index.html#help">Length guide</a><a href="index.html#help">FAQs</a></div>
+        <div class="footer-column"><h3>ABOUT</h3><a href="index.html#about">Our story</a><a href="#contact">Contact us</a><a href="index.html#privacy">Privacy policy</a><a href="index.html#terms">Terms &amp; conditions</a><a href="index.html#help">Delivery &amp; returns</a></div>
+        <div class="footer-column footer-contact"><h3>GET IN TOUCH</h3><a href="https://wa.me/2348104251284">◉ &nbsp; WhatsApp · +234 810 425 1284</a><span>Lagos, Nigeria</span><span>Mon–Sat, 9am–8pm</span><h3 class="accept-title">WE ACCEPT</h3><div class="payment-badges"><b>MoMo</b><b>VISA</b><b>at</b></div></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 SUPREME HAIRKING. All rights reserved.</span><nav><a href="index.html#privacy">Privacy</a><a href="index.html#terms">Terms</a><a href="index.html#help">Returns</a><a href="index.html#help">Help</a></nav></div>
+    </footer>
+    <dialog class="gallery-lightbox" aria-label="Full-size gallery image"><button class="lightbox-close" aria-label="Close image">×</button><img src="" alt="" /><p></p></dialog>
+    <div class="toast" role="status"></div>
+    <script src="gallery.js"></script>
+  </body>
+</html>
